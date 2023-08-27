@@ -1,14 +1,167 @@
-body{
-    margin: auto;
-    padding: auto;
-
+:root {
+    --primary-color: #FF3347;     /* Red */
+    --secondary-color: #FFFFFF;   /* White */
+    --accent-color: #000000;      /* Black */
+    --background-color: #F0F0F0;  /* Light Gray */
+    --text-color: #333333;        /* Dark Gray */
 }
 
-h1{
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+       background-image: url('https://www.atlantisbahamas.com/storage/media/atlantis-property-shot-royal-hero-sky.jpg');
+  background-size: 100%; /* This will stretch the image to cover the body */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+    }
+ 
+    h2 {
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+ 
     
-    width: 90%;
+  
+
+.location {
+  display: flex;
+  flex-direction: column; /* Arrange content and image vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center-align text within container */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+
+  /* Other styling properties like padding, border, and shadow */
 }
 
-p{
-    font-size: 2em;
+.location h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 10px; /* Space between heading and paragraph */
 }
+
+.location p {
+  margin-bottom: 0;
+}
+
+.location-imgs {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px; /* Space between content and image */
+}
+
+
+
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    width: 100%;
+     margin-top: 50px; /* Adjust the value as needed */
+     border-radius: 15px;
+}
+
+nav {
+  
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+nav a {
+  
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: red;
+}
+
+nav a:active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav a:visited {
+    color: white;
+}
+nav ul li a:hover {
+    background-color: var(--text-color); /* Change background on hover */
+    color: var(--secondary-color); /* Change text color on hover */
+}
+
+section {
+    padding: 2em;
+}
+
+    
+
+
+.mission, .featured-experience, .locations {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    padding: auto;
+    margin: auto;
+}
+
+
+
+p {
+    line-height: 1.6;
+}
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    nav ul li {
+        display: block; /* Display items as block for stacking */
+        margin: 5px 0; /* Add vertical spacing */
+    }
+    
+    /* Add any other necessary adjustments for smaller screens */
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+}
+
+@media (orientation: portrait) {
+  body {
+    background-size: cover; /* Cover mode for portrait orientation */
+  }
+}
+
